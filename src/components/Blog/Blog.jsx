@@ -4,7 +4,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import axios from "axios";
 import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import BlogDetails from "../BlogDetails/BlogDetails";
-import blog from "/portfolio web/src/assets/blog.jpg";
+import blogImage from "../../assets/blog.jpg";
 import "./Blog.css";
 const Blog = () => {
   let location = useLocation();
