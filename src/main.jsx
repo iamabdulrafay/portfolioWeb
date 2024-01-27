@@ -18,8 +18,8 @@ import Projects from "./components/Projects/Projects.jsx";
 import Blog from "./components/Blog/Blog.jsx";
 import BlogDetails from "./components/BlogDetails/BlogDetails.jsx";
 
-const router = (
-  <HashRouter>
+const router = createBrowserRouter(
+  createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route path="" element={<Home />} />
       <Route path="/about" element={<About />} />
@@ -28,7 +28,7 @@ const router = (
       <Route path="/blog" element={<Blog />} />
       <Route path="/blog/:userid" element={<BlogDetails />} />
     </Route>
-  </HashRouter>
+  )
 );
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
