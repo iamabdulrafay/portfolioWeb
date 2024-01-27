@@ -11,7 +11,7 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   build: {
-    outDir: "build",
+    outDir: "dist",
 
     assetsInclude: "src/assets/**",
     rollupOptions: {
