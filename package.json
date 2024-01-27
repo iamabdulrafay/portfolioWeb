@@ -1,11 +1,14 @@
 {
+  "homepage": "https://iamabdulrafay.github.io/portfolioWeb ",
   "name": "book-product",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
